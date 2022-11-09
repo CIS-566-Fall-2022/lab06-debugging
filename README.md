@@ -1,5 +1,13 @@
 # lab06-debugging
 
+# Result
+Fixed all bugs for this assignment.
+1. Syntax error fixed: https://www.shadertoy.com/view/mdB3Rt
+2. Raycast uv param issue fixed: https://www.shadertoy.com/view/msB3Rt
+3. Resolution issue fixed: https://www.shadertoy.com/view/mdSGzt
+4. Raymarch iterations issue fixed: https://www.shadertoy.com/view/mdBGzt
+5. Specular material issue fixed: https://www.shadertoy.com/view/dsBGzt
+
 # Setup 
 
 Create a [Shadertoy account](https://www.shadertoy.com/). Either fork this shadertoy, or create a new shadertoy and copy the code from the [Debugging Puzzle](https://www.shadertoy.com/view/flGfRc).
