@@ -22,7 +22,7 @@ Compiler error- fixed by adding type declaration vec2 to uv2!
 
 Bug number 5:
 
-Fixed floor artifacts by increasing number of iterations of march!
+Fixed floor artifacts by increasing number of iterations of march! This issue happens to rays that get very close but dont actually intersect objects in sphere tracing, since many iterations are used up by very small increments forward, resulting in no intersection if the number of iterations isnt high enough.
 
 # lab06-debugging
 
