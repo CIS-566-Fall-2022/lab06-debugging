@@ -17,7 +17,7 @@ Extra credit if you can find all FIVE bugs.
 
 ### Bugs:
 
-|Line No.|Artifact/Issue|Correction|
+|Line No.|Artifact/Issue that helped in identification|Correction|
 |---|---|---|
 |99|Compile time error, vec not found| Replaced vec with vec2|
 |102|Made the image appear flat or with incorrect resolution|Passed remapped uv2 instead of uv to rayCast function|
@@ -25,6 +25,7 @@ Extra credit if you can find all FIVE bugs.
 |76|Reflection not working, spheres looked flat shaded|Was reflecting eye about normal instead of dir about normal|
 |18|Disappearing floor plane around edges of spheres|Very small value of max ray steps, updated from 64 to 256|
 
+[Corrected shadertoy link](https://www.shadertoy.com/view/msBGRd)
 
 # Submission
 - Create a pull request to this repository
