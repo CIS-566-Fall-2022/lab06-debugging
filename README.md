@@ -11,6 +11,21 @@ It don't do that. Correct THREE of the FIVE bugs that are messing up the output.
 
 Extra credit if you can find all FIVE bugs.
 
+# Solution
+
+### Team members: Joanna Fisch, Rhuta Joshi
+
+### Bugs:
+
+|Line No.|Artifact/Issue|Correction|
+|---|---|---|
+|99|Compile time error, vec not found| Replaced vec with vec2|
+|102|Made the image appear flat or with incorrect resolution|Passed remapped uv2 instead of uv to rayCast function|
+|11|Everything appeared stretched along x axis|`iResolution.x/iResolution.x` replaced with `iResolution.x/iResolution.y`|
+|76|Reflection not working, spheres looked flat shaded|Was reflecting eye about normal instead of dir about normal|
+|18|Disappearing floor plane around edges of spheres|Very small value of max ray steps, updated from 64 to 256|
+
+
 # Submission
 - Create a pull request to this repository
 - In the README, include the names of both your team members
