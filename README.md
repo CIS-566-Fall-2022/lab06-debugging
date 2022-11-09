@@ -6,6 +6,10 @@ Bug number 2:
 
 Spheres are off center, rotation is weird. Cause: Incorrect uv coordinates sent! We calculated NDC uv2, but never actually inputted it into the raycast function. This would explain the offset.
 
+Bug number 3:
+
+Specular reflection missing. I knew that the bug would have to be inside sdf3d. It turns out we were reflecting eye instead of dir! Replacing eye with dir fixed this bug.
+
 # lab06-debugging
 
 # Setup 
