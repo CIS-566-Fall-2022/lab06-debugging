@@ -1,3 +1,9 @@
+Submission: 
+
+https://www.shadertoy.com/view/msBGzt
+
+Collaborators: None
+
 Bug number 1:
 
 Spheres look deformed. Cause: aspect ratio was incorrect in the projection part of the raycast function!
@@ -9,6 +15,14 @@ Spheres are off center, rotation is weird. Cause: Incorrect uv coordinates sent!
 Bug number 3:
 
 Specular reflection missing. I knew that the bug would have to be inside sdf3d. It turns out we were reflecting eye instead of dir! Replacing eye with dir fixed this bug.
+
+Bug number 0:
+
+Compiler error- fixed by adding type declaration vec2 to uv2!
+
+Bug number 5:
+
+Fixed floor artifacts by increasing number of iterations of march!
 
 # lab06-debugging
 
