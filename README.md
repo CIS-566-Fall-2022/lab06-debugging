@@ -1,5 +1,18 @@
 # lab06-debugging
 
+## Submission
+### Team
+Sakshi & Megan
+
+[Solution Link](https://www.shadertoy.com/view/ddBGRt)
+
+### Bugs
+1. Line 97: Syntax error vec2 (not vec)
+2. Line 100: Pass in the correct UVs (uv2)
+3. Line 11: Correct the aspect ratio (iResolution.x / iResolution.y)
+4. Line 18: Increase the max distance for ray marching (was 64, changed to 300)
+5. Line 75: Fixed ray calculation for specular reflection (input to reflect should be ray direction and not ray origin)
+
 # Setup 
 
 Create a [Shadertoy account](https://www.shadertoy.com/). Either fork this shadertoy, or create a new shadertoy and copy the code from the [Debugging Puzzle](https://www.shadertoy.com/view/flGfRc).
