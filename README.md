@@ -1,3 +1,9 @@
+# Submission
+
+Shadertoy link: https://www.shadertoy.com/view/dsB3Rt
+
+There was a bug in the Common section as well, in `interpNoise3D1()`. Using `vec3` instead of `ivec3` for `floor(p)` led to float precision errors.
+
 # lab06-debugging
 
 # Setup 
