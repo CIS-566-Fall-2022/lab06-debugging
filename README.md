@@ -1,5 +1,28 @@
 # lab06-debugging
 
+# Submission
+
+Name: Megan Reddy
+
+Partner: Sakshi Rathore
+
+Shadertoy link: https://www.shadertoy.com/view/msSGRt
+
+#### Bug 1. Compile Error
+When I loaded the Shadertoy, there was a red compile error on line 97. This was because the type name was incomplete and showed `vec` instead of `vec2.` 
+
+#### Bug 2. Aspect Ratio
+After fixing the compile error,  I noticed that the spheres were stretched. This led me to believe either the uv coordinate was wrong, or the ray direction computation was wrong. After verifying that the uv computation looked okay, I looked inside of the raycast function and saw that the aspect ratio was being calculated as `iResolution.x / iResolution.x` instead of `iResolution.x / iResolution.y`.
+
+#### Bug 3. Wrong Argument
+The image looked as if it was centered at the bottom left hand corner of the screen, so I went back to check the uv computation. It turns out that the uv computation was correct, but the wrong variable was being passed into the raycast function. I changed the argument from `uv` to `uv2` on line 100.
+
+#### Bug 4. Ray Marching Artifacts
+I noticed some artifacts around the edges of the spheres, which reminded me of similar things I saw while implementing the SDF homework. To fix this, I went to the ray march function and changed the total number of ray steps from `64` to `256`.
+
+#### Bug 5. Reflection Direction
+Since the spheres had no reflection, I immediately looked inside the `sdf3D` function for the reflection code. The incident ray direction passed into the `reflect` function was incorrect; it should be the incoming ray direction `dir` and not the eye position. 
+
 # Setup 
 
 Create a [Shadertoy account](https://www.shadertoy.com/). Either fork this shadertoy, or create a new shadertoy and copy the code from the [Debugging Puzzle](https://www.shadertoy.com/view/flGfRc).
