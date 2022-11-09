@@ -35,6 +35,7 @@ From there we figured that our screen size looked good and everything was propor
 ERROR4: was reflecting eye about nor to calculate the new direction instead of direction about normal.
 
 Finally we figured out by looking at the image that there was space around the edges of the sphere sdf. I remembered having this error in my sdf hw where the edges had space between objects and the way I had solved that was by updating the max ray steps used.
+
 ERROR 5: Increase Max Ray steps
 
 
