@@ -1,3 +1,7 @@
+Bug number 1:
+
+Spheres look deformed. Cause: aspect ratio was incorrect in the projection part of the raycast function!
+
 # lab06-debugging
 
 # Setup 
