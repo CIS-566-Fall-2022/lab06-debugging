@@ -2,6 +2,10 @@ Bug number 1:
 
 Spheres look deformed. Cause: aspect ratio was incorrect in the projection part of the raycast function!
 
+Bug number 2:
+
+Spheres are off center, rotation is weird. Cause: Incorrect uv coordinates sent! We calculated NDC uv2, but never actually inputted it into the raycast function. This would explain the offset.
+
 # lab06-debugging
 
 # Setup 
