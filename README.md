@@ -1,3 +1,6 @@
+# shadertoy link
+https://www.shadertoy.com/view/msS3zt
+
 # bugs
 - bug 1: compile error. uv2 was type vec and not vec2
 - bug 2: incorrect inputs to raycast() in mainImage().  uv was inputted and not uv2.
