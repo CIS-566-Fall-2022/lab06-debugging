@@ -1,5 +1,8 @@
 # lab06-debugging
 
+# Group
+Yuqi Zhang, Dongying Liu, Wenqing Wang
+
 # Setup 
 
 Create a [Shadertoy account](https://www.shadertoy.com/). Either fork this shadertoy, or create a new shadertoy and copy the code from the [Debugging Puzzle](https://www.shadertoy.com/view/flGfRc).
@@ -10,6 +13,11 @@ Let's practice debugging! We have a broken shader. It should produce output that
 It don't do that. Correct THREE of the FIVE bugs that are messing up the output. You are STRONGLY ENCOURAGED to work with a partner and pair program to force you to talk about your debugging thought process out loud.
 
 Extra credit if you can find all FIVE bugs.
+
+1 . https://www.shadertoy.com/view/ddS3zt
+I find the bug that it should be vec2 uv2 = 2.0 * uv - vec2(1.0); I need a "2" after "uv". I find that bug because it has a compile error that pointing to this spot. 
+
+
 
 # Submission
 - Create a pull request to this repository
