@@ -1,5 +1,17 @@
 # lab06-debugging
 
+[Shadertoy]( https://www.shadertoy.com/view/mdj3Rt)
+
+Name: Yilin Liu
+
+# Bugs
+
+- Bug 1: changed "vec" to "vec2" in mainImage(); -- Found by compiling.
+
+- Bug 2: changed "uv" to "uv2" in mainImage() -- found uv2 was derived from uv but unused.
+
+- Bug 3: changed "eye" to "dir" in sdf3D() -- the reflection was clearly not corrected so I looked into the reflect function. The first input should be the incident light, aka incoming light, which should take "dir" as the input. 
+
 # Setup 
 
 Create a [Shadertoy account](https://www.shadertoy.com/). Either fork this shadertoy, or create a new shadertoy and copy the code from the [Debugging Puzzle](https://www.shadertoy.com/view/flGfRc).
