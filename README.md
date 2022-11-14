@@ -1,5 +1,17 @@
 # lab06-debugging
 
+https://www.shadertoy.com/view/csXXzn
+
+Bug 1: compiler error (line 95) - fixed by adding "2" to "vec"
+
+Bug 2: spheres are squished down (line 11) - fixed by computing H by dividing by iResolution.y instead of iResolution.x
+
+Bug 3: sphere positions are too close to the camera and off-center (line 100) - fixed by raycasting using uv2 instead of uv
+
+Bug 4: no specular reflection (line 75) - fixed by reflecting dir instead of eye
+
+Bug 5: ground does not extend far enough (line 18) - fixed by increasing the number of iterations we march from 64 to 200
+
 # Setup 
 
 Create a [Shadertoy account](https://www.shadertoy.com/). Either fork this shadertoy, or create a new shadertoy and copy the code from the [Debugging Puzzle](https://www.shadertoy.com/view/flGfRc).
